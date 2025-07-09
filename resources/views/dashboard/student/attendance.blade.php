@@ -28,7 +28,7 @@
                         </thead>   
                         <tbody>
                             <tr class="day-row">
-                                <td colspan="4">Wed, July 09, 2025</td>
+                                <td colspan="4">Wednesday, July 09, 2025</td>
                             </tr>
 
                             <tr>
