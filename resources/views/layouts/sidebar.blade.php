@@ -28,9 +28,9 @@
             </nav>
         </div>
         <div class="row">
-            <div class="btn-logout">
+            <a href="{{ url('/login')}}" class="btn-logout">
                 Logout
-            </div>
+            </a>
         </div>
     </div>
 </div>

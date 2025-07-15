@@ -13,6 +13,14 @@
                     <div class="des">
                        <span class="option" style="font-weight: bold;">Weekly </span>| Friday, May 22, 2025 - Friday, May 29, 2025
                     </div>
+                    <div class="move-week">
+                        <div class="left">
+                            <img src="{{ asset('assets/dashboard/icons/chevron-left-solid.svg')}}">
+                        </div>
+                        <div class="right">
+                            <img src="{{ asset('assets/dashboard/icons/chevron-right-solid.svg')}}">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -177,6 +185,21 @@
                             
                         </tbody>
                     </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head-attendance box">
+                    <div class="des">
+                       <span class="option" style="font-weight: bold;">Weekly </span>| Friday, May 22, 2025 - Friday, May 29, 2025
+                    </div>
+                    <div class="move-week">
+                        <div class="left">
+                            <img src="{{ asset('assets/dashboard/icons/chevron-left-solid.svg')}}">
+                        </div>
+                        <div class="right">
+                            <img src="{{ asset('assets/dashboard/icons/chevron-right-solid.svg')}}">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

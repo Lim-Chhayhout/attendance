@@ -24,14 +24,15 @@
                     <div class="icon">
                         <img src="{{ asset('assets/global/icons/red-clock-regular.svg')}}">
                     </div>
-                    <div class="message">None</div>
-                    <div class="des">None</div>
+                    {{-- <div class="message"></div>
+                    <div class="des"></div> --}}
                 </div>
                 <div class="block-3 box btn-scan">
                     <div class="icon">
                         <img src="{{ asset('assets/global/icons/black-qrcode-solid.svg')}}">
                     </div>
-                    <div class="message">Scan QR</div>
+                    <div class="message">Scan</div>
+                    <div class="des">Click to scan!</div>
                 </div>
             </div>
             <div class="row">

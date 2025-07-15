@@ -6,10 +6,10 @@
     <header class="header-content">SETEC Support</header>
     <div class="support">
         <div class="col">
-            <div class="btn-link">
+            <a href="{{ url('/forgot')}}" class="btn-link">
                 <span>I Forgot my Password</span>
                 <img src="{{ asset('assets/auth/images/Polygon.png')}}" width="14px">
-            </div>
+            </a>
             <div class="guide">
                 <p>ដើម្បីប្រើប្រាស់ <span>SETEC attendance</span> និស្សិតត្រូវអនុវត្តន៍ដូចខាងក្រោម៖</p>
                 <ol>

@@ -28,8 +28,8 @@ body{
     box-sizing: border-box;
 }
 
-img{
-    width:100%;
+a{
+    text-decoration: none;
 }
 
 button{
@@ -166,7 +166,8 @@ nav .item:hover{opacity:100%;}
 .dashboard-container .sidebar .row .btn-logout,
 .dashboard-container .con .header .page-lander{font-size:14px;}
 
-.dashboard-container .sidebar .row .btn-logout{
+.dashboard-container .sidebar .row a{
+    display: block;
     width:100%;
     padding:0.8rem 0;
     border:1px solid rgba(255,0,0,0.4);
@@ -177,7 +178,7 @@ nav .item:hover{opacity:100%;}
     transition:0.2s;
 }
 
-.dashboard-container .sidebar .row .btn-logout:hover{
+.dashboard-container .sidebar .row a:hover{
     background-color:red;
     color:#fff;
 }

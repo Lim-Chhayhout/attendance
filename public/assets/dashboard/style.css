@@ -1,5 +1,9 @@
 /* student-home */
 
+.icon img{
+    width: 100%;
+}
+
 .home,
 .scan,
 .attendance{
@@ -14,6 +18,12 @@
     padding-left: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .home .con,
@@ -160,7 +170,6 @@
 .view-attendance-box{
     position: relative;
     width: 100%;
-    height: 450px;
     padding: 0 1rem;
     overflow-y: auto;
     scrollbar-width: none;  
@@ -202,4 +211,27 @@
 
 .view tbody .last{
     border-bottom: none;
+}
+
+.head-attendance .move-week{
+    display: flex;
+    gap: .5rem;
+}
+
+.head-attendance .move-week .left,
+.head-attendance .move-week .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #00000010;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.head-attendance .move-week .left img,
+.head-attendance .move-week .right img{
+    width: 10px;
 }
