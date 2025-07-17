@@ -11,9 +11,9 @@
 <body>
 
     <div class="dashboard-container">
-        @include('layouts.sidebar')
+        @include('components.sidebar')
         <div class="con">
-            @include('layouts.head')
+            @include('components.head')
             <div class="main">
                 @yield('content')
             </div>
