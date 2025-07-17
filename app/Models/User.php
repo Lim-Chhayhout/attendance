@@ -18,9 +18,12 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'group_id', 'role_id',
+        'first_name', 'last_name', 'gender', 'email', 'date_of_birth',
+        'phone', 'photo',
+        'address_province', 'address_district', 'address_commune', 'address_village',
+        'street_number', 'home_number',
+        'user_name', 'password',
     ];
 
     /**
@@ -43,6 +46,13 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'date_of_birth' => 'date'
         ];
     }
+
+    /**
+     * Relationships
+     */
+    public function role() { return $this->belongsTo(Role::class); }
+    public function group() { return $this->belongsTo(Group::class); }
 }

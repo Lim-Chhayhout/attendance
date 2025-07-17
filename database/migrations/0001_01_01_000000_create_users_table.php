@@ -11,11 +11,27 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // Users
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->foreignId('group_id')->constrained();
+            $table->foreignId('role_id')->constrained();
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('gender');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->date('date_of_birth');
+            $table->string('phone');
+            $table->string('photo')->nullable();
+            // Simple address fields
+            $table->string('address_province');
+            $table->string('address_district');
+            $table->string('address_commune');
+            $table->string('address_village');
+            $table->integer('street_number');
+            $table->string('home_number');
+            // Login fields
+            $table->string('user_name')->unique();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
